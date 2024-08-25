@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-gray-100 text-gray-900">
+
+    <!-- Section d'en-tête -->
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                <img src="https://ssl.sitew.org/images/blog/articles/exemples-logos/apple.png" alt="logo"
+                    class="h-14 w-14">
+            </div>
+            <nav class="space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-900">Accueil</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">À propos</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section des articles en vedette -->
+    <section class="container mx-auto px-6 py-10">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">Articles en vedette</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Carte de l'article -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK9TI5Yw4QgWpNFWSSqxXzPsDsQcbqMXcWEg&s"
+                    alt="Article 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Tablette Iphone</h3>
+                    <p class="text-gray-600 mt-4">Ceci est un extrait de l'article 1. Il donne un aperçu rapide du
+                        contenu.</p>
+                </div>
+            </div>
+            <!-- Répétez pour les autres articles en vedette -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://www.01net.com/app/uploads/2023/07/iPhone-15-pro-prix-augmentation.webp"
+                    alt="Article 2" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Iphone 15 Pro Max</h3>
+                    <p class="text-gray-600 mt-4">Ceci est un extrait de l'article 2. Il donne un aperçu rapide du
+                        contenu.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Article 3" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Macbook pro</h3>
+                    <p class="text-gray-600 mt-4">Ceci est un extrait de l'article 3. Il donne un aperçu rapide du
+                        contenu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catégorie Section -->
+    <section class="bg-gray-50 py-10">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Catégories</h2>
+            <div class="space-x-4">
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-4 py-2 rounded">Smart Phone</span>
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-4 py-2 rounded">Tablettes</span>
+                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-4 py-2 rounded">Mac</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Articles récents -->
+    <section class="container mx-auto px-6 py-10">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">Articles récents</h2>
+        <ul class="space-y-4">
+            <li class="border-b pb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Iphone 15 pro Max</h3>
+                <p class="text-gray-600 text-sm">Publié le 15 août 2024</p>
+            </li>
+            <li class="border-b pb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Iphone 15 pro</h3>
+                <p class="text-gray-600 text-sm">Publié le 14 août 2024</p>
+            </li>
+            <li class="border-b pb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Iphone 15</h3>
+                <p class="text-gray-600 text-sm">Publié le 13 août 2024</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Formulaire d'inscription à la newsletter -->
+    <section class="bg-gray-50 py-10">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Inscrivez-vous à notre newsletter</h2>
+            <form class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <input type="email" placeholder="Entrez votre email"
+                    class="p-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none w-full md:w-2/3">
+                <button type="submit"
+                    class="p-3 rounded-md bg-blue-600 text-white hover:bg-blue-700 w-full md:w-1/3">S'inscrire</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="bg-gray-800 text-gray-100 py-6">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm">&copy; 2024 Mon Blog. Tous droits réservés.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
